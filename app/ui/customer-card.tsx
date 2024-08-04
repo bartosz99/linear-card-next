@@ -51,6 +51,8 @@ export default function CustomerCard({ src, alt }: Props) {
   const handleMouseLeave = () => {
     setOpacity(0);
     setIsTransitioning(true);
+    setMouseX(50);
+    setMouseY(50);
     if (!timeoutRef.current) return;
     clearTimeout(timeoutRef.current);
   };

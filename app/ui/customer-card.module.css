@@ -1,9 +1,5 @@
 .card {
   border-radius: 48px;
-  perspective: 800px;
-}
-
-.card:hover {
   transform: perspective(800px) rotateY(var(--r-x)) rotateX(var(--r-y));
 }
 
