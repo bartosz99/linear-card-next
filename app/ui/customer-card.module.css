@@ -1,5 +1,6 @@
 .card {
   border-radius: 48px;
+  perspective: 800px;
 }
 
 .card:hover {
@@ -17,6 +18,7 @@
   transition-property: transform;
   border-radius: var(--radius);
   border: 1px solid var(--color-border-primary);
+  overflow: hidden;
 }
 
 .contentWrapper > * {
@@ -97,6 +99,9 @@
   grid-area: inherit;
   background: inherit;
 
-  background-position: center, 0% var(--bg-y), calc(var(--bg-x) * -1) calc(var(--bg-y) * -1),
+  background-position:
+    center,
+    0% var(--bg-y),
+    calc(var(--bg-x) * -1) calc(var(--bg-y) * -1),
     var(--bg-x) var(--bg-y);
 }

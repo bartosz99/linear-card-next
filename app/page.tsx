@@ -1,12 +1,8 @@
-import CustomerCard from '@/app/ui/customer-card';
-import { customerCards } from '@/app/lib/constants'
+import CustomerCard from "@/app/ui/customer-card";
+import { customerCards } from "@/app/lib/constants";
 
 const customerCardsItems = customerCards.map((card) => (
-  <CustomerCard
-    key={card.id}
-    src={card.src}
-    alt={card.alt}
-  />
+  <CustomerCard key={card.id} src={card.src} alt={card.alt} />
 ));
 
 export default function Home() {
